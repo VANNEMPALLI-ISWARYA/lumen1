@@ -8,7 +8,7 @@ app.secret_key = 'your_secret_key'
 db = MySQLdb.connect(host="localhost", user="root", passwd="root", db="flaskdemo1")
 
 # Registration route
-@app.route('/register', methods=['GET', 'POST'])
+@app.route('/', methods=['GET', 'POST'])
 def register():
     msg = ''
     if request.method == 'POST':
